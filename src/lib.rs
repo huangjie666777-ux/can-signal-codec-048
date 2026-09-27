@@ -1,0 +1,1 @@
+//! CAN signal codec library.
