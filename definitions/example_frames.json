@@ -1,0 +1,25 @@
+{
+  "frames": [
+    {
+      "name": "device_status",
+      "id": 420,
+      "extended": false,
+      "length": 4,
+      "signals": [
+        { "name": "mode",     "start_bit": 0,  "width": 2,  "endian": "intel",    "signed": false, "factor": 1, "offset": 0, "selector": true },
+        { "name": "counter",  "start_bit": 8,  "width": 8,  "endian": "intel",    "signed": false, "factor": 1, "offset": 0 },
+        { "name": "temp_c",   "start_bit": 16, "width": 10, "endian": "intel",    "signed": true,  "factor": 0.5, "offset": -40, "when": 1 },
+        { "name": "voltage",  "start_bit": 23, "width": 10, "endian": "motorola", "signed": false, "factor": 0.02, "offset": 0, "when": 2 }
+      ]
+    },
+    {
+      "name": "ext_sensor",
+      "id": 305419896,
+      "extended": true,
+      "length": 8,
+      "signals": [
+        { "name": "pressure", "start_bit": 39, "width": 32, "endian": "motorola", "signed": false, "factor": 0.0001, "offset": 0 }
+      ]
+    }
+  ]
+}
